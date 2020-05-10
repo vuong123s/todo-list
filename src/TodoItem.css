@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Todo {
+  border: 1px solid #eeeeee;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Todo .Header {
+  padding: 10px 15px;
+  display: flex;
+  border-bottom: 1px solid #eee;
+  opacity: 0.3;
+}
+
+.Todo .Header .tick-style {
+  opacity: 0;
+}
+
+.Todo .Header input {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  padding-left: 10px;
+  width: 100%;
+  border: none;
+}
+
+.Todo .Header input:focus {
+  outline: none;
+}
+
+.Todo .Header img {
+  margin: 10px 20px 0 0;
+  width: 20px;
+  height: 20px;
+}
+
+.TodoItem {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: #4d4d4d;
+  padding: 10px 5px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+}
+.TodoItem > p {
+  margin: auto 20px;
+  display: flex;
+  flex-grow: 1;
+}
+
+.TodoItem > img {
+  margin: auto 0;
+}
+
+.TodoItem:last-child {
+  border-bottom: none;
+}
+
+.TodoItem img {
+  margin-left: 10px;
+}
+
+.TodoItem-complete > p {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.delete-button {
+  padding: 0 20px;
+  opacity: 0;
+}
+
+.TodoItem:hover .delete-button {
+  opacity: 1;
+}
+
+.all-button {
+  display: flex;
+  margin: 10px;
+  font-size: 12px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.items-length {
+  flex-grow: 0.5;
+}
+
+.on-saw-items {
+  display: flex;
+  flex-grow: 0.4;
+}
+
+.on-saw-items p {
+  margin: 0 5px;
+  padding: 0 5px;
+  border-radius: 2.5px;
+  border: 1px solid white;
+}
+
+.clear-button:hover {
+  text-decoration: underline;
+}
+
+.on-saw-items:hover p {
+  border: 1px solid rgba(220, 100, 100, 0.15);
+}
+
+.a {
+  border: 1px solid rgba(225, 0, 100, 0.5);
+}
